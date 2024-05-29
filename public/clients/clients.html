@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clientes</title>
+  <link rel="stylesheet" href="clients.css">
+</head>
+<body>
+  <header>
+    <h1>Administración de Clientes</h1>
+  </header>
+  
+  <div id="main-content">
+    <!-- Formulario para crear o actualizar un cliente -->
+    <form id="client-form">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" required>
+      <button type="submit" id="submit-btn">Guardar</button>
+    </form>
+
+    <!-- Lista de clientes -->
+    <div id="client-list"></div>
+  </div>
+
+  <script src="clients.js"></script>
+</body>
+</html>

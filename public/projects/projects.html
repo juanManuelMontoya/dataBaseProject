@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos</title>
+  <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+  <header>
+    <h1>Administración de Proyectos</h1>
+  </header>
+  
+  <div id="main-content">
+    <!-- Formulario para crear o actualizar un proyecto -->
+    <form id="project-form">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="start_date">Fecha de Inicio:</label>
+      <input type="date" id="start_date" name="start_date" required>
+      <label for="end_date">Fecha de Fin:</label>
+      <input type="date" id="end_date" name="end_date" required>
+      <label for="department_id">ID de Departamento:</label>
+      <input type="text" id="department_id" name="department_id" required>
+      <label for="manager_id">ID de Manager:</label>
+      <input type="text" id="manager_id" name="manager_id" required>
+      <button type="submit" id="submit-btn">Guardar</button>
+    </form>
+
+    <!-- Lista de proyectos -->
+    <div id="project-list"></div>
+  </div>
+
+  <script src="projects.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asociaciones entre Empleados y Productos</title>
+  <link rel="stylesheet" href="employee_product.css">
+</head>
+<body>
+  <header>
+    <h1>Proyectos y empleados</h1>
+  </header>
+  
+  <div id="main-content">
+    <!-- Formulario para asociar un producto a un empleado -->
+    <form id="employee-product-form">
+      <label for="employee_id">ID de Empleado:</label>
+      <input type="text" id="employee_id" name="employee_id" required>
+      <label for="project_id">ID de Producto:</label>
+      <input type="text" id="project_id" name="project_id" required>
+      <button type="submit" id="submit-btn">Guardar</button>
+    </form>
+
+    <!-- Lista de asociaciones entre empleados y productos -->
+    <div id="employee-product-list"></div>
+  </div>
+
+  <script src="employee_product.js"></script>
+</body>
+</html>
